@@ -25,6 +25,12 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 -- close windows
 vim.keymap.set("n", "<leader>q", "<C-w>q")
 
+-- move line with alt + up and down
+vim.keymap.set({"n", "v", "x"}, "<A-Up>", ":m .-2<CR>==")
+vim.keymap.set({"n", "v", "x"}, "<A-j>", ":m .-2<CR>==")
+vim.keymap.set({"n", "v", "x"}, "<A-Down>", ":m .+1<CR>==")
+vim.keymap.set({"n", "v", "x"}, "<A-k>", ":m .+1<CR>==")
+
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
