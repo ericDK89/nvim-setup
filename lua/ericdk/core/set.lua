@@ -27,3 +27,6 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "120"
+
+--set yank to clipboard
+vim.opt.clipboard = "unnamedplus"
